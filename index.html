@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scone On? | Thalia Roessel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="wordmark" href="index.html">Scone&nbsp;On<span class="q">?</span></a>
+  <nav class="topnav">
+    <a href="mailto:sconeonbakery@gmail.com">Email</a>
+    <details class="order-dropdown">
+      <summary class="order-btn">Order</summary>
+      <div class="order-menu">
+        <a href="https://square.link/u/aUFp14dz">Blue Corn Scone Mix</a>
+        <a href="https://square.link/u/GFh06eS6">Blue Corn Pinon Apricot Scone</a>
+        <a href="https://square.link/u/7ZQdKpNk">Tips/Coffee</a>
+        <!-- Add more ordering options here, e.g.:
+        <a href="https://example.com">Another option</a>
+        -->
+      </div>
+    </details>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <p class="greeting">Ya'át'ééh! | Hello, welcome</p>
+    <p class="hero-sub">Scone On? LLC &nbsp;·&nbsp; by Thalia Roessel</p>
+  </section>
+
+  <section class="gallery" aria-label="Photos of scones and baking">
+    <img src="images/eggwash-sugar.jpg" alt="Sprinkling sugar over blueberry scones on a baking tray">
+    <img src="images/box-of-scones.jpg" alt="A box of freshly baked blueberry scones, ready for pickup">
+    <img src="images/apricot-scone.jpg" alt="An apricot scone split open, filled with apricot jam and topped with pine nuts">
+  </section>
+
+  <article class="story">
+    <h2>Her story</h2>
+    <p>Thalia was born and raised on the Navajo reservation. She is of the Water Flows Together People, Tó'áhání. Born for the Coyote Pass People, Naaneesht'ézhí Tábąąhá. She was raised with a rich Navajo culture, herding sheep with her late maternal grandmother on her family's homeland. For much of her childhood she came to understand adaptation through the stories of the Long Walk (Hwéeldi) passed down from her late grandmother, and through her own experience of limited running water and electricity, and learning her late mother's variations on Navajo foods for family dinners.</p>
+
+    <p>She began work in Phoenix, Arizona after high school, holding corporate jobs until she followed a calling to pursue her long-time fascination with scones. After culinary school, she started her business, Scone On?, in 2019.</p>
+
+    <p>Her business managed to flourish during the pandemic, and she made a name for herself as the "Scone Lady." In recent years she has expanded into other corn-based pastries — cakes, cookies, breads, and seasonings.</p>
+
+    <p>While she loves making pastries, she has also found a growing passion in speaking engagements, sharing her knowledge and preparing the next generation. She has worked with schools on the reservation to encourage and instill Indigenous food sovereignty, dedicating much of 2023 and 2024 to bringing communities together — on the reservation, with non-profit organizations, and on national television. Her work continues normalizing Indigenous foods to help address the health crises facing generations before and after us.</p>
+  </article>
+
+</main>
+
+<footer class="press">
+  <h2>Featured in</h2>
+  <p class="press-links">
+    <a href="https://ediblephoenix.ediblecommunities.com/shop/shop-scone/">Edible Phoenix</a>
+    <span class="dot" aria-hidden="true"></span>
+    <a href="https://www.phoenixnewtimes.com/food-drink/food-is-holistic-indigenous-arizonans-discuss-food-sovereignty-17570588/">Phoenix New Times</a>
+    <span class="dot" aria-hidden="true"></span>
+    <a href="https://www.phoenixnewtimes.com/food-drink/arizona-chefs-and-a-new-times-reporter-are-on-a-magnolia-network-show-19316751/">Magnolia Network</a>
+    <span class="dot" aria-hidden="true"></span>
+    <a href="https://navajotimes.com/ae/people/navajo-sugar-dine-cook-thalia-roessel-incorporates-todineeshzhee-roots-in-recipes/">Navajo Times</a>
+  </p>
+</footer>
+
+<script>
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.order-dropdown[open]').forEach(function (menu) {
+      if (!menu.contains(e.target)) menu.removeAttribute('open');
+    });
+  });
+</script>
+
+</body>
+</html>
